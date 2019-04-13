@@ -1,0 +1,305 @@
+
+default: "%player% died"
+
+# Player deaths by explosions
+explosion:
+  tnt:
+    self:
+      - "%player% attempted to be a creeper"
+      - "%player% found out how TNT works"
+      - "%player% has an explosive personality."
+    default:
+      - "%player% blew up"
+    other:
+      - "%player% was blow up by %attacker%"
+
+  firework:
+    - "%player% went off with a bang"
+
+  enderCrystal:
+    - "%player% was blown up by an Ender Crystal"
+
+projectile:
+
+  fireball:
+    default:
+      - "%player% was fireball`ed to death"
+    player:
+      - "%player% was fireball`ed by %attacker%"
+    self:
+      - "%player% fireball`ed himself to death"
+
+  enderPearl:
+    - "%player% teleported to death"
+    - "%player% learned how to use Ender pearls."
+
+  default:
+    - "%player% was shot by %attacker%"
+
+  self:
+    - "%player% shot himself to death"
+
+# Potions & potion effects
+magic:
+  default:
+    - "%player% was killed by magic"
+
+  attacked:
+    - "%player% was killed by %attacker% using magic"
+
+pvp:
+  default: "%player% was slain by %attacker%"
+
+  player:
+    - "%player% was slain by %attacker% using %weapon%"
+
+  THORNS:
+    - "%player% was killed trying to hurt %attacker%"
+
+  ENTITY_SWEEP_ATTACK:
+    - "%player% was killed by %attacker%"
+
+
+  BLOCK_EXPLOSION:
+    - "%player% blew up whilst fighting %attacker%"
+
+  CONTACT:
+    - "%player% was pricked to death whilst trying to escape %attacker%"
+
+  CRAMMING:
+    - "%player% was squished too much whilst fighting %attacker%"
+
+  CUSTOM:
+    - "%player% ceased to exist whilst fighting %attacker%"
+
+  DROWNING:
+    - "%player% drowned whilst trying to escape %attacker%"
+
+  FALL:
+    - "%player% hit the ground too hard whilst fighting %attacker%"
+
+  FALLING_BLOCK:
+    - "%player% was squashed by a falling block whilst fighting %attacker%"
+
+  FIRE:
+    - "%player% went up in flames whilst fighting %attacker%"
+
+  FIRE_TICK:
+    - "%player% burned to death whilst fighting %attacker%"
+
+  HOT_FLOOR:
+    - "%player% discovered floor was lava whilst fighting %attacker%"
+
+
+  LAVA:
+    - "%player% tried to swim in lava whilst trying to escape %attacker%"
+
+
+  LIGHTNING:
+    - "%player% was struck by lightning whilst fighting %attacker%"
+
+  POISON:
+    - "%player% died of poison whilst fighting %attacker%"
+
+  STARVATION:
+    - "%player% starved to death whilst fighting %attacker%"
+
+  SUFFOCATION:
+    - "%player% suffocated in a wall whilst fighting %attacker%"
+
+  SUICIDE:
+    - "%player% took his own life"
+
+  VOID:
+    - "%player% fell out of the world whilst fighting %attacker%"
+
+  WITHER:
+    - "%player% withered away whilst fighting %attacker%"
+
+  ANVIL:
+    - "%player% was squashed by a falling anvil whilst fighting %attacker%"
+
+normal:
+  BLOCK_EXPLOSION:
+    - "%player% blew up"
+
+  CONTACT:
+    - "%player% was pricked to death"
+    - "%player% poked a cactus, the cactus poked back!"
+
+  CRAMMING:
+    - "%player% was squished too much"
+
+  CUSTOM:
+    - "%player% died"
+    - "%player% died to nothing?"
+
+  DRAGON_BREATH:
+    - "%player% was roasted in dragon breath"
+
+  DROWNING:
+    - "%player% drowned"
+    - "%player% thought he was a fish."
+    - "%player% took a long walk off a short pier"
+
+  FALL:
+    - "%player% hit the ground too hard"
+    - "%player% forgot about gravity."
+    - "%player% threw himself at the ground, and didn't miss!"
+    - "%player% confirmed gravity"
+    - "%player% chased a chicken. Over a cliff. "
+    - "%player% achieved terminal velocity"
+    - "What goes up must come down, right, %player% ?"
+
+  FALLING_BLOCK:
+    - "%player% was squashed by a falling block"
+
+  FIRE:
+    - "%player% went up in flames"
+    - "turns out %player% IS flammable."
+
+  FIRE_TICK:
+    - "%player% burned to death"
+    - "%player% obviously isn't fireproof"
+    - "%player% was the human torch, briefly."
+
+
+  FLY_INTO_WALL:
+    - "%player% experienced kinetic energy"
+    - "%player% flew into a wall"
+
+
+  HOT_FLOOR:
+    - "%player% discovered floor was lava"
+
+
+  LAVA:
+    - "%player% tried to swim in lava"
+    - "%player% became obsidian"
+
+
+  LIGHTNING:
+    - "%player% was struck by lightning"
+
+  POISON:
+    - "%player% died of poison"
+
+  STARVATION:
+    - "%player% starved to death"
+    - "%player% forgot how to eat."
+
+  SUFFOCATION:
+    - "%player% suffocated in a wall"
+    - "%player% learned that cellular respiration uses oxygen, not sand."
+    - "%player% ate some sand"
+
+  SUICIDE:
+    - "%player% took his own life"
+
+  VOID:
+    - "%player% fell out of the world"
+    - "%player% ceased to exists"
+
+  WITHER:
+    - "%player% withered away"
+
+  ANVIL:
+    - "%player% was squashed by a falling anvil"
+
+mob:
+  Zombie:
+    - "%player% was killed by a Zombie"
+    - "%player% appears to have very tasty brains."
+    - "%player% became Brain Stew"
+
+  Creeper:
+    normal:
+      - "%player% was killed by a %attacker%"
+      - "%player% Hugged a creeper"
+      - "%player% tried to tame a creeper."
+    charged:
+      - "%player% was killed by a Charged %attacker%"
+
+  Wither:
+    - "%player% was blown up by a wither"
+
+  Ghast:
+    - "%player% was killed by a %attacker%"
+    - "%player% lost a round of tennis to a %attacker%"
+
+  Blaze:
+    - "%player% was killed by a %attacker%"
+
+  Spider:
+    - "%player% was killed by a %attacker%"
+
+  Guardian:
+    - "%player% was killed by a %attacker%"
+
+  Vex:
+    - "%player% was killed by a %attacker%"
+
+  Evoker:
+    - "%player% was killed by a %attacker%"
+
+  Endermite:
+    - "%player% was killed by a %attacker%"
+
+  Enderman:
+    - "%player% was killed by a %attacker%"
+    - "%player% had a staring contest with a %attacker%... he lost"
+    - "%player% played peek-a-boo with an %attacker%. It was not amused."
+
+  EnderDragon:
+    - "%player% left the End in little bite-sized pieces"
+    - "%player% tried to ride the %attacker%."
+    - "%player% thought he was a knight!"
+    - "%player% was formally greeted by the %attacker%."
+
+  CaveSpider:
+    - "%player% was killed by a %attacker%"
+
+  Slime:
+    - "%player% was killed by a %attacker%"
+    - "%player% discovered that slimes are not cute up close."
+
+  Stray:
+    - "%player% was shot by a %attacker%"
+
+  Skeleton:
+    - "%player% was shot by a %attacker%"
+
+  Llama:
+    - "%player% was killed by a %attacker%"
+
+  MagmaCube:
+    - "%player% was killed by a %attacker%"
+
+  Silverfish:
+    - "%player% was killed by a %attacker%"
+
+  PolarBear:
+    - "%player% was killed by a %attacker%"
+
+  Shulker:
+    - "%player% was shot by a %attacker%"
+
+  Husk:
+    - "%player% was killed by a %attacker%"
+
+  Vindicator:
+    - "%player% was killed by a %attacker%"
+
+  Wolf:
+    - "%player% was killed by a %attacker%"
+    - "%player%  left clicked the wolf, not right."
+
+  WitherSkeleton:
+    - "%player% was killed by a %attacker%"
+
+  ZombieVillager:
+    - "%player% was killed by a %attacker%"
+
+  ZombiePigman:
+    - "%player% was killed by a %attacker%"
+    - "%player% started a fight with a %attacker% and lost...."

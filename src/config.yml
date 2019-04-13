@@ -1,0 +1,69 @@
+combatTag:
+  # if combat tag should be enabled
+  enabled: true
+  # if mobs trigger combat tag
+  mobsTrigger: true
+  # the message to display on entering combat
+  startMessage: "&cYou are now in combat."
+  # the message to display on leaving combat
+  endMessage: "&aYou are no longer in combat."
+
+  bossBar:
+    # if a boss bar showing the remaining time should be shown
+    enabled: true
+    # the title of the boss bar
+    title: "&aCombat"
+
+  disableCommands:
+    # if certain commands should be disabled while in combat
+    enabled: true
+    denyMessage: "&cYou may not use that command while in combat."
+    # if so the list of commands to be disabled
+    disabledCommands:
+      - fly
+      - tp
+      - warp
+
+  time:
+    # the duration that mobs trigger combat tag for (if enabled, in seconds)
+    mob: 15
+    # the duration that players trigger combat tag for (in seconds)
+    player: 30
+
+autoRespawn:
+  # if auto respawn should be enabled. This bypasses the player death screen
+  enabled: true
+
+  # Disable player death.
+  # This stops the player from actually dieing. It reduces the lag caused by player death.
+  # however, this may interfere with some plugins
+  disableDeath:
+    # if this feature should be enabled.
+    enabled: true
+
+    # send a fake player death event to plugins.
+    # although this fixes compatibility with most plugins, this may cause errors.
+    fakeEvent: true
+
+  fancyRespawn:
+    # if fancy respawn should be enabled
+    # this adds a cool-down timer between respawn
+    enabled: true
+    # the cool-down time (in seconds)
+    time: 5
+    # the title to be displayed
+    title: "&cYou Died."
+    # the subtitle. It must contain %d, it will be replaced with the time until respawn
+    subTitle: "Respawning in %d seconds."
+
+customDeathMessages:
+  # if custom death messages should be enabled.
+  enabled: true
+  # use player display name instead of name eg: [admin]player instead of player
+  useDisplayName: true
+
+  deathInventory:
+    # allow players to view a player's inventory on death
+    enabled: true
+    # the message to be shown when if the inventory is no longer available
+    notAvailable: "&cThis inventory is no longer available."
