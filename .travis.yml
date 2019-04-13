@@ -13,21 +13,12 @@ cache:
   directories:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
-
 deploy:
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: YVZ50QWlpHzAfgnfWE34WOpr1pG3hSnYGvNzKJZioRPdbFiGna7eXHjTNPaj5XPqrxZPpXWjJHXOMvn6MiwH9HAFOQ+u6hLPT7xP5liHRL0wc7ekEtSJQua612tXtHsuoXKs5AfCfsxkgJNxaywm9s+WFwiDkAm8HptyrSq8Oh9NIfbwKE/HoDs1zDAgmAS3ONtQCD1NlVat2VjrtSy0BsmyHIt2aSaeGiyJHUawr1VSnWRFeXSO6kRSv2pKNJVoCZdG031145+F7LtdcFXVOM3iBtK2sV9sEVcoTGq2pXiu/X1sLBgZv8g8bTWppvsU2zWkjNVzJ1nKLYzzfr3Ws7uNwkOyjjqeewvdfIUYgpG//fPNu8MxZNoLueDXU+iGnQSSdoOWZdVZFXxqu/cWIGlayF31+avUIa/a8uA4Dq8czk/hks36EILl7G4rY7YGZeXdC/Jhy9OLVas5vNmLLk94fv6I5TFrAH+UHJbJyfT/WqxHsM+fvPw+PYXeIK9pnZ/DEUeJTCmUgvqBH9XXsfUR1l3cTJnpdwcQRGnZr6Sfh72aNMZ07DhaEitVcsc+7/dU4TEW2b9pdVmZ82R6X4H+MTNVgEato1mmLGMncR2c8OOgYM/UV/Rclawh0WwgwKgfzZYlJRL7RBcdmcAI3QDIkLByfBat2K1imPI/Mc4=
-    file: $TRAVIS_BUILD_DIR/builds/*.jar
-    file_glob: true
-    on:
-      tags: true
-  - provider: pages
-    skip-cleanup: true
-    github_token:
-      secure: YVZ50QWlpHzAfgnfWE34WOpr1pG3hSnYGvNzKJZioRPdbFiGna7eXHjTNPaj5XPqrxZPpXWjJHXOMvn6MiwH9HAFOQ+u6hLPT7xP5liHRL0wc7ekEtSJQua612tXtHsuoXKs5AfCfsxkgJNxaywm9s+WFwiDkAm8HptyrSq8Oh9NIfbwKE/HoDs1zDAgmAS3ONtQCD1NlVat2VjrtSy0BsmyHIt2aSaeGiyJHUawr1VSnWRFeXSO6kRSv2pKNJVoCZdG031145+F7LtdcFXVOM3iBtK2sV9sEVcoTGq2pXiu/X1sLBgZv8g8bTWppvsU2zWkjNVzJ1nKLYzzfr3Ws7uNwkOyjjqeewvdfIUYgpG//fPNu8MxZNoLueDXU+iGnQSSdoOWZdVZFXxqu/cWIGlayF31+avUIa/a8uA4Dq8czk/hks36EILl7G4rY7YGZeXdC/Jhy9OLVas5vNmLLk94fv6I5TFrAH+UHJbJyfT/WqxHsM+fvPw+PYXeIK9pnZ/DEUeJTCmUgvqBH9XXsfUR1l3cTJnpdwcQRGnZr6Sfh72aNMZ07DhaEitVcsc+7/dU4TEW2b9pdVmZ82R6X4H+MTNVgEato1mmLGMncR2c8OOgYM/UV/Rclawh0WwgwKgfzZYlJRL7RBcdmcAI3QDIkLByfBat2K1imPI/Mc4=
-    local-dir: $TRAVIS_BUILD_DIR/build/docs/javadoc
-    keep-history: true
-    on:
-      branch: master
+  provider: releases
+  api_key:
+    secure: LXLcprzoK8s49DTc01pnwirTB45DUGyuhoLO8O4eCP9kM7AbjoaREKXsUpjCIItjpIpmQCMVvKHMp0A0TjZI2ZHESCcDzPiiI2n8wEdr/QQdVW8LJqqLKl4nBRRKAzgCkRREy7eodwjGJJ7h7ZY7VTCEu+Uuw7gVvnk/VXco37VTI/zsUU8xTmX4P4tngTREFLhR88s6UsyzsnYgDHjxRd+vqH0XzdqADoQPgetf5ruFtPkCLXnNlDf1SC2cLO87Z9SV8VBjPKLWPzA8gXL1g0ay6jDgTKyexMRCsWBPAFdlmOaH3mTY15bpG7gufFmoNba0+rkfFOGwLkV51BOA2IfyiKWOfw7F4xi1nWcsDAVfJ1ORfWgcMsiWyKvOs6/Nx87935BsD9uvY4DpzzePMTj/JNxQ/VYCwGpcAISYKl4PAoYvkh3f0Nyc7fBlgqGt7EcHf+ybd1b5T/Vj4pnqnkrVoDeFGSL6NB/hhkN9w78a8/ALt3KVjCUR8LIbmM5SXYlUl0nd2kFTLw3ief3Yk81s1mXEhq+DlrZ3/r2j6hNAkmofMS342Vwcj60e1ri4/4sbPHOUFLaaTMVOXAx8tt+3nCbEWmfPwd3BGDMx/5x19yefNgoWHpislRUrHRwWGZuoznqOVx34pKUyCRwfn2lF1D5iec+lJNhGybGm95o=
+  file: $TRAVIS_BUILD_DIR/builds/*.jar
+  file_glob: true
+  skip_cleanup: true
+  on:
+    repo: yehan2002/CombatLoggerPlus
