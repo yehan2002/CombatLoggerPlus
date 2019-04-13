@@ -2,26 +2,23 @@ language: java
 install: true
 jdk:
 - oraclejdk8
-
 script:
-- ""
+- ''
 - "./gradlew build"
 - "./gradlew javadoc"
-
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-
 cache:
   directories:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
-  
+
 deploy:
   - provider: releases
     skip_cleanup: true
     api_key:
-      secure: hAUg+iCgAwqSdOf/NXaoAJpvj8s+ytZxRGFC0UICA6pTrxHjL+jAi9y9kRZI/P/jyycaNbZNaIIF5RmFwGFRbBbJvPZLCWa9AgvyXBbLmmlQdRe3BVRV4ziQ/zHWsePwdd9pRwpXTwTNi5ywIEPUKPSWMZ7FteQifs8FnzsiFTopr0SQCN/vL80MD6SRbM05E4TzJmt5dUNPRMby/LS+ikFYZj/sbOncg+8HOBu9hrVfOTVgqPHO+6hHUMeehAfQjFuUgLnhBeNje48erC9xS9IGKGrNpEtGxfHEn0TzLhtClK5KHWib+Ekn19+Aue5mhC+Rb6en6AnMdQDyc04/j+VuuNLFtWLwX+GsuJPPiCDduayGjTOO4JkNsNArOHKiFAVO61VPzi6zLaId5v9alwLGYz0/mk0KKAEdK/tHUVYD4CLQzKNlgJVYQuh4WME+2dG2GoVPQjXUwK9GoQNRtBU4cieyaN2OHoS3bFxrB7smem0tnuRI1TUTawjP2xz3n2dnn/pUanO9kPjSv3OR0UYHP27Y6UvEj9B/wY/RPEVhdMAZCbScasEOzO6rdHl/3Ydsky/vFriHTKc0X5elw0cNMhy7tNERwQQyinWbQfJm4Dhj8h0XdcbbWpYeEv2hmdZuseeS/Bw+nO8dMorRsRJffoc+ZcPCEJY3QJ/8gNk=
+      secure: YVZ50QWlpHzAfgnfWE34WOpr1pG3hSnYGvNzKJZioRPdbFiGna7eXHjTNPaj5XPqrxZPpXWjJHXOMvn6MiwH9HAFOQ+u6hLPT7xP5liHRL0wc7ekEtSJQua612tXtHsuoXKs5AfCfsxkgJNxaywm9s+WFwiDkAm8HptyrSq8Oh9NIfbwKE/HoDs1zDAgmAS3ONtQCD1NlVat2VjrtSy0BsmyHIt2aSaeGiyJHUawr1VSnWRFeXSO6kRSv2pKNJVoCZdG031145+F7LtdcFXVOM3iBtK2sV9sEVcoTGq2pXiu/X1sLBgZv8g8bTWppvsU2zWkjNVzJ1nKLYzzfr3Ws7uNwkOyjjqeewvdfIUYgpG//fPNu8MxZNoLueDXU+iGnQSSdoOWZdVZFXxqu/cWIGlayF31+avUIa/a8uA4Dq8czk/hks36EILl7G4rY7YGZeXdC/Jhy9OLVas5vNmLLk94fv6I5TFrAH+UHJbJyfT/WqxHsM+fvPw+PYXeIK9pnZ/DEUeJTCmUgvqBH9XXsfUR1l3cTJnpdwcQRGnZr6Sfh72aNMZ07DhaEitVcsc+7/dU4TEW2b9pdVmZ82R6X4H+MTNVgEato1mmLGMncR2c8OOgYM/UV/Rclawh0WwgwKgfzZYlJRL7RBcdmcAI3QDIkLByfBat2K1imPI/Mc4=
     file: $TRAVIS_BUILD_DIR/builds/*.jar
     file_glob: true
     on:
@@ -29,9 +26,8 @@ deploy:
   - provider: pages
     skip-cleanup: true
     github_token:
-      secure: hAUg+iCgAwqSdOf/NXaoAJpvj8s+ytZxRGFC0UICA6pTrxHjL+jAi9y9kRZI/P/jyycaNbZNaIIF5RmFwGFRbBbJvPZLCWa9AgvyXBbLmmlQdRe3BVRV4ziQ/zHWsePwdd9pRwpXTwTNi5ywIEPUKPSWMZ7FteQifs8FnzsiFTopr0SQCN/vL80MD6SRbM05E4TzJmt5dUNPRMby/LS+ikFYZj/sbOncg+8HOBu9hrVfOTVgqPHO+6hHUMeehAfQjFuUgLnhBeNje48erC9xS9IGKGrNpEtGxfHEn0TzLhtClK5KHWib+Ekn19+Aue5mhC+Rb6en6AnMdQDyc04/j+VuuNLFtWLwX+GsuJPPiCDduayGjTOO4JkNsNArOHKiFAVO61VPzi6zLaId5v9alwLGYz0/mk0KKAEdK/tHUVYD4CLQzKNlgJVYQuh4WME+2dG2GoVPQjXUwK9GoQNRtBU4cieyaN2OHoS3bFxrB7smem0tnuRI1TUTawjP2xz3n2dnn/pUanO9kPjSv3OR0UYHP27Y6UvEj9B/wY/RPEVhdMAZCbScasEOzO6rdHl/3Ydsky/vFriHTKc0X5elw0cNMhy7tNERwQQyinWbQfJm4Dhj8h0XdcbbWpYeEv2hmdZuseeS/Bw+nO8dMorRsRJffoc+ZcPCEJY3QJ/8gNk=
+      secure: YVZ50QWlpHzAfgnfWE34WOpr1pG3hSnYGvNzKJZioRPdbFiGna7eXHjTNPaj5XPqrxZPpXWjJHXOMvn6MiwH9HAFOQ+u6hLPT7xP5liHRL0wc7ekEtSJQua612tXtHsuoXKs5AfCfsxkgJNxaywm9s+WFwiDkAm8HptyrSq8Oh9NIfbwKE/HoDs1zDAgmAS3ONtQCD1NlVat2VjrtSy0BsmyHIt2aSaeGiyJHUawr1VSnWRFeXSO6kRSv2pKNJVoCZdG031145+F7LtdcFXVOM3iBtK2sV9sEVcoTGq2pXiu/X1sLBgZv8g8bTWppvsU2zWkjNVzJ1nKLYzzfr3Ws7uNwkOyjjqeewvdfIUYgpG//fPNu8MxZNoLueDXU+iGnQSSdoOWZdVZFXxqu/cWIGlayF31+avUIa/a8uA4Dq8czk/hks36EILl7G4rY7YGZeXdC/Jhy9OLVas5vNmLLk94fv6I5TFrAH+UHJbJyfT/WqxHsM+fvPw+PYXeIK9pnZ/DEUeJTCmUgvqBH9XXsfUR1l3cTJnpdwcQRGnZr6Sfh72aNMZ07DhaEitVcsc+7/dU4TEW2b9pdVmZ82R6X4H+MTNVgEato1mmLGMncR2c8OOgYM/UV/Rclawh0WwgwKgfzZYlJRL7RBcdmcAI3QDIkLByfBat2K1imPI/Mc4=
     local-dir: $TRAVIS_BUILD_DIR/build/docs/javadoc
     keep-history: true
     on:
       branch: master
-
