@@ -18,20 +18,6 @@ targetCompatibility = '1.8'
 
 def bukkitVersion = '1.12.2-R0.1-SNAPSHOT'
 
-def getCheckedOutGitCommitHash() {
-    def gitFolder = "$projectDir/.git/"
-    def takeFromHash = 12
-
-    def head = new File(gitFolder + "HEAD").text.split(":") // .git/HEAD
-    def isCommit = head.length == 1
-
-    if(isCommit) return head[0].trim().take(takeFromHash)
-
-    def refHead = new File(gitFolder + head[1].trim())
-    refHead.text.trim().take takeFromHash
-}
-
-
 repositories {
     jcenter()
     
@@ -57,7 +43,7 @@ dependencies {
 	//annotationProcessor (group: 'org.projectlombok', name:'lombok', version:'1.18.6')
 }
 
-version = version + "-SNAPSHOT-" + getCheckedOutGitCommitHash()
+version = ""
 
 compileJava.options.encoding = 'UTF-8'
 
