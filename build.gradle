@@ -9,9 +9,9 @@ apply plugin: 'idea'
 
 import org.apache.tools.ant.filters.ReplaceTokens
 
-group = 'io.github.yehan2002.Traps'
-version = "1.5.4" //$VERSION$
-archivesBaseName = 'Traps'
+group = 'io.github.yehan2002.CombatLoggerPlus'
+version = "1.1" //$VERSION$
+archivesBaseName = 'CombatLoggerPlus'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
