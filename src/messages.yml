@@ -15,6 +15,7 @@ explosion:
 
   firework:
     - "%player% went off with a bang"
+    - "%player% stood too close to a firework"
 
   enderCrystal:
     - "%player% was blown up by an Ender Crystal"
@@ -59,7 +60,6 @@ pvp:
   ENTITY_SWEEP_ATTACK:
     - "%player% was killed by %attacker%"
 
-
   BLOCK_EXPLOSION:
     - "%player% blew up whilst fighting %attacker%"
 
@@ -90,10 +90,8 @@ pvp:
   HOT_FLOOR:
     - "%player% discovered floor was lava whilst fighting %attacker%"
 
-
   LAVA:
     - "%player% tried to swim in lava whilst trying to escape %attacker%"
-
 
   LIGHTNING:
     - "%player% was struck by lightning whilst fighting %attacker%"
@@ -122,6 +120,7 @@ pvp:
 normal:
   BLOCK_EXPLOSION:
     - "%player% blew up"
+    - "%player% tried to sleep in the nether"
 
   CONTACT:
     - "%player% was pricked to death"
@@ -133,6 +132,7 @@ normal:
   CUSTOM:
     - "%player% died"
     - "%player% died to nothing?"
+    - "%player% died. That's all I know"
 
   DRAGON_BREATH:
     - "%player% was roasted in dragon breath"
@@ -149,7 +149,7 @@ normal:
     - "%player% confirmed gravity"
     - "%player% chased a chicken. Over a cliff. "
     - "%player% achieved terminal velocity"
-    - "What goes up must come down, right, %player% ?"
+    - "What goes up must come down, right, %player%?"
 
   FALLING_BLOCK:
     - "%player% was squashed by a falling block"
@@ -167,11 +167,12 @@ normal:
   FLY_INTO_WALL:
     - "%player% experienced kinetic energy"
     - "%player% flew into a wall"
+    - "%player% learned that energy cannot be destroyed"
 
 
   HOT_FLOOR:
     - "%player% discovered floor was lava"
-
+    - "%player% forgot to wear frost walker boots"
 
   LAVA:
     - "%player% tried to swim in lava"
@@ -199,6 +200,7 @@ normal:
   VOID:
     - "%player% fell out of the world"
     - "%player% ceased to exists"
+    - "%player% left the world"
 
   WITHER:
     - "%player% withered away"
@@ -222,10 +224,12 @@ mob:
 
   Wither:
     - "%player% was blown up by a wither"
+    - "%player% tried to beat the %attacker%"
 
   Ghast:
     - "%player% was killed by a %attacker%"
     - "%player% lost a round of tennis to a %attacker%"
+    - "%player% thought that the %attacker% was a cat"
 
   Blaze:
     - "%player% was killed by a %attacker%"
@@ -238,6 +242,7 @@ mob:
 
   Vex:
     - "%player% was killed by a %attacker%"
+    - "%player% thought the %attacker% was a fairy"
 
   Evoker:
     - "%player% was killed by a %attacker%"
@@ -247,7 +252,7 @@ mob:
 
   Enderman:
     - "%player% was killed by a %attacker%"
-    - "%player% had a staring contest with a %attacker%... he lost"
+    - "%player% had a staring contest with an %attacker%... he lost"
     - "%player% played peek-a-boo with an %attacker%. It was not amused."
 
   EnderDragon:
@@ -292,14 +297,18 @@ mob:
 
   Wolf:
     - "%player% was killed by a %attacker%"
-    - "%player%  left clicked the wolf, not right."
+    - "%player% left clicked the wolf, not right."
+    - "%player% petted a %attacker% the wrong way"
+    - "%player% was torn to shreds by a pack of %attacker%s"
 
   WitherSkeleton:
     - "%player% was killed by a %attacker%"
 
   ZombieVillager:
     - "%player% was killed by a %attacker%"
+    - "%player% tried to trade with a %attacker%"
 
   ZombiePigman:
     - "%player% was killed by a %attacker%"
     - "%player% started a fight with a %attacker% and lost...."
+    - "%player% tried to win an 50v1 against %attacker%s"

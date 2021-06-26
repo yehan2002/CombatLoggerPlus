@@ -97,7 +97,9 @@ public class Respawn {
             int value = entry.getValue();
             if (entry.getValue() != 1) {
                 RespawnTimer.put(p, value - 1);
-                p.sendTitle(Title, String.format(subTitle,value - 1), 1, 30, 20);
+                try {
+                    p.sendTitle(Title, String.format(subTitle, value - 1), 1, 30, 20);
+                }catch (NoSuchMethodError ignored){}
             } else {
                 scheduler.runTaskLater(plugin, () -> this.respawn(p), 1);
                 RespawnTimer.remove(p);
